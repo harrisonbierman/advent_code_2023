@@ -4,8 +4,8 @@ fn main() {
     let contents = fs::read_to_string("src/input.txt").expect("file not read");
     let mut sum: u32 = 0;
     for line in contents.lines() {
-            let mut ch_total: String = String::new();
-            for ch in line.chars() {
+        let mut ch_total: String = String::new();
+        for ch in line.chars() {
             match ch.to_digit(10) {
                 Some(_) => ch_total.push(ch),
                 None => (),
