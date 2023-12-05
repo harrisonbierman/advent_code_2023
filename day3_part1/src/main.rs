@@ -11,7 +11,7 @@ fn main() {
     for (row, line) in lines.clone().enumerate() {
         grid.push(Vec::new());
         grid[row].push('.'); // left grid padding
-        for  ch in line.chars() {
+        for ch in line.chars() {
                 grid[row].push(ch)
         }
     }
