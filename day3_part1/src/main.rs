@@ -51,6 +51,7 @@ fn is_symbol_surrounding(row: &usize, col: usize, grid: &Vec<Vec<char>>, re_sym:
 
 // preliminary function that is not used in final calulation
 // unique symbols found were  '-', '*', '/', '#', '&', '+', '@', '=', '$', '%'
+#[allow(dead_code)]
 fn find_unique_symbols(string: String) {
     let mut unique_symbols: Vec<char> = Vec::new();
     for ch in string.chars() {
