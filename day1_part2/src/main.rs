@@ -4,7 +4,7 @@ use regex::Regex;
 fn main() {
     let re = Regex::new(r"\d|one|two|three|four|five|six|seven|eight|nine").unwrap();
     let re_flip = Regex::new(r"\d|eno|owt|eerht|ruof|evif|xis|neves|thgie|enin").unwrap();
-    let contents = fs::read_to_string("src/input.txt").expect("file not read");
+    let contents = fs::read_to_string("day1_part2/src/input.txt").expect("file not read");
     let mut sum: u32 = 0;
     for line in contents.lines() {
         let first = word_to_digit(re.find(line).unwrap().as_str());
